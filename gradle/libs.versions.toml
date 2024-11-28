@@ -23,7 +23,7 @@ kotlin-serialization-json = "1.7.3"
 coil-kt = "3.0.4"
 koin = "4.0.0"
 
-ksp = "2.0.21-1.0.28"
+ksp = "2.1.0-1.0.29"
 
 [plugins]
 # Android Gradle Plugin
