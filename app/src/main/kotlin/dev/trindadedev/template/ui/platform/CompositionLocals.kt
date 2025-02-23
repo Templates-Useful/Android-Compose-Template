@@ -1,4 +1,4 @@
-package dev.trindadedev.template
+package dev.trindadedev.template.ui.platform
 
 /*
  * Copyright 2025 Template.
@@ -16,4 +16,12 @@ package dev.trindadedev.template
  * limitations under the License.
  */
 
-typealias Strings = dev.trindadedev.template.R.string
+import androidx.compose.runtime.compositionLocalOf
+import androidx.navigation.NavHostController
+
+val LocalMainNavController =
+  compositionLocalOf<NavHostController> { noLocalProvidedFor("LocalMainNavController") }
+
+internal fun noLocalProvidedFor(name: String): Nothing {
+  error("CompositionLocal $name not present")
+}
