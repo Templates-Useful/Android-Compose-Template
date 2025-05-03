@@ -11,18 +11,18 @@ dependencies {
 
 gradlePlugin {
   plugins {
-    register("template.application") {
-      id = "template.application"
+    register("templateapp.application") {
+      id = "templateapp.application"
       implementationClass = "ApplicationConventionPlugin"
     }
     
-    register("template.library") {
-      id = "template.library"
+    register("templateapp.library") {
+      id = "templateapp.library"
       implementationClass = "LibraryConventionPlugin"
     }
     
-    register("template.compose") {
-      id = "template.compose"
+    register("templateapp.compose") {
+      id = "templateapp.compose"
       implementationClass = "ComposeConventionPlugin"
     }
   }

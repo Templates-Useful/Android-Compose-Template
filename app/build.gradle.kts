@@ -2,8 +2,8 @@ import dev.trindadedev.template.build.BuildConfig
 import dev.trindadedev.template.build.VersionUtils
 
 plugins {
-  alias(libs.plugins.template.application)
-  alias(libs.plugins.template.compose)
+  alias(libs.plugins.templateapp.application)
+  alias(libs.plugins.templateapp.compose)
   alias(libs.plugins.kotlin.serialization)
 }
 

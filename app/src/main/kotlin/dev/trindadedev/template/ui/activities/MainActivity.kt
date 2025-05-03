@@ -1,7 +1,7 @@
 package dev.trindadedev.template.ui.activities
 
 /*
- * Copyright 2025 Template.
+ * Copyright 2025 TemplateApp.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import dev.trindadedev.template.navigation.MainNavHost
 import dev.trindadedev.template.ui.platform.LocalMainNavController
-import dev.trindadedev.template.ui.theme.TemplateTheme
+import dev.trindadedev.template.ui.theme.TemplateAppTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
     enableEdgeToEdge()
     super.onCreate(savedInstanceState)
     setContent {
-      TemplateTheme {
+      TemplateAppTheme {
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
           ProvideMainCompositionLocals { MainNavHost() }
         }

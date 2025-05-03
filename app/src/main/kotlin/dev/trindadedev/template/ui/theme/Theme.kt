@@ -1,7 +1,7 @@
 package dev.trindadedev.template.ui.theme
 
 /*
- * Copyright 2025 Template.
+ * Copyright 2025 TemplateApp.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 @Composable
-fun TemplateTheme(
+fun TemplateAppTheme(
   darkTheme: Boolean = isSystemInDarkTheme(),
   highContrastDarkTheme: Boolean = false,
   dynamicColor: Boolean = true,
