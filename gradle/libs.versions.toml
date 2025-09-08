@@ -21,7 +21,7 @@ compose-viewmodel = "2.9.3"
 kotlin-serialization-json = "1.9.0"
 
 coil-kt = "3.3.0"
-koin = "4.0.2"
+koin = "4.1.1"
 
 ksp = "2.2.10-2.0.2"
 
