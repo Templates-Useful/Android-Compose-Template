@@ -56,7 +56,7 @@
 #       There are tweaks for specific operating systems such as AIX, CygWin,
 #       Darwin, MinGW, and NonStop.
 #
-#   (3) This script is generated from the Groovy templateapp
+#   (3) This script is generated from the Groovy template
 #       https://github.com/gradle/gradle/blob/HEAD/platforms/jvm/plugins-application/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
 #       within the Gradle project.
 #
@@ -114,7 +114,7 @@ case "$( uname )" in                #(
   NONSTOP* )        nonstop=true ;;
 esac
 
-CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+CLASSPATH="\\\"\\\""
 
 
 # Determine the Java command to use to start the JVM.
@@ -213,7 +213,7 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 set -- \
         "-Dorg.gradle.appname=$APP_BASE_NAME" \
         -classpath "$CLASSPATH" \
-        org.gradle.wrapper.GradleWrapperMain \
+        -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" \
         "$@"
 
 # Stop when "xargs" is not available.
