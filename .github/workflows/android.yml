@@ -37,7 +37,7 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Upload release app
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: templateapp-release
           path: app/build/outputs/apk/release/
